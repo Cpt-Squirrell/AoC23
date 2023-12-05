@@ -38,3 +38,6 @@
 *.pdb
 *.ilk
 *.vcxprj
+
+# Build directory
+build/
