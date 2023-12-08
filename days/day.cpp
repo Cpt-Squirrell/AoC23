@@ -38,7 +38,7 @@ Day::Day(
 void Day::Run()
 {
     if (!PartOne)
-        std::cerr; // FIXME: << name << " has no solution for part one.\n";
+        std::cerr; // TODO: << name << " has no solution for part one.\n";
     else
     {
         std::chrono::time_point before = std::chrono::high_resolution_clock::now();
@@ -48,7 +48,7 @@ void Day::Run()
     }
 
     if (!PartTwo)
-        std::cerr; // FIXME: << name << " has no solution for part two.\n";
+        std::cerr; // TODO: << name << " has no solution for part two.\n";
     else
     {
         std::chrono::time_point before = std::chrono::high_resolution_clock::now();

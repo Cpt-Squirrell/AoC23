@@ -132,7 +132,7 @@ int main()
     TerminalTable table;
     table.SetHeader(std::vector<std::pair<std::string, int>>{
         { "Day", 6 },
-        { "Description", 6 },
+        { "Description", 10 },
         { "Solution 1", 2 },
         { "Timer 1", 8 },
         { "Solution 2", 2 },
@@ -147,12 +147,16 @@ int main()
             day_implements::dOne_pTwo),
 
         Day("Day 2", "The island",
-            std::filesystem::path{}),
+            std::filesystem::path{"input_data/day_two.txt"},
+            day_implements::dTwo_pOne,
+            day_implements::dTwo_pTwo),
 
-        Day("Day 3", " ",
-            std::filesystem::path{}),
+        Day("Day 3", "The gondola",
+            std::filesystem::path{"input_data/day_three.txt"},
+            day_implements::dThree_pOne,
+            day_implements::dThree_pTwo),
 
-        Day("Day 4", " ",
+        Day("Day 4", "The island island",
             std::filesystem::path{}),
 
     };
@@ -171,10 +175,10 @@ int main()
                 std::to_string(day.GetResults().first)
                 : std::string{"DnF"},
             day.PartOne ? FormatTime(std::chrono::duration_cast<std::chrono::milliseconds>(day.GetTimes().first).count()) : std::string{"DnF"},
-            day.PartOne ?
+            day.PartTwo ?
                 std::to_string(day.GetResults().second)
                 : std::string{"DnF"},
-            day.PartOne ? 
+            day.PartTwo ? 
                 std::string
                 {
                     FormatTime(std::chrono::duration_cast<std::chrono::milliseconds>(day.GetTimes().second).count())

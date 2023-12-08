@@ -10,11 +10,11 @@ namespace day_implements
     int dOne_pOne(std::filesystem::path src);
     int dOne_pTwo(std::filesystem::path src);
 
-    // int dTwo_pOne();
-    // int dTwo_pTwo();
+    int dTwo_pOne(std::filesystem::path src);
+    int dTwo_pTwo(std::filesystem::path src);
 
-    // int dThree_pOne();
-    // int dThree_pTwo();
+    int dThree_pOne(std::filesystem::path src);
+    int dThree_pTwo(std::filesystem::path src);
 }
 
 class Day
