@@ -15,6 +15,8 @@ namespace day_implements
 
     int dThree_pOne(std::filesystem::path src);
     int dThree_pTwo(std::filesystem::path src);
+    
+    int dFour_pOne(std::filesystem::path src);
 }
 
 class Day

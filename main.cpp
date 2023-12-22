@@ -157,12 +157,14 @@ int main()
             day_implements::dThree_pTwo),
 
         Day("Day 4", "The island island",
-            std::filesystem::path{}),
+            std::filesystem::path{"input_data/day_four.txt"},
+            day_implements::dFour_pOne),
 
     };
 
     std::cout << std::left;
     table.DrawTopLine();
+
     table.DrawHeader();
     table.DrawLine(true);
     for (Day day : days)
